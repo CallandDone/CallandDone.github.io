@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Service</h1>
+    </header>
+    
+    <section id="service-selection">
+        <h2>Select a Service</h2>
+        <select id="service-select">
+            <option value="window_cleaning">Window Cleaning</option>
+            <option value="consultation">Consultation</option>
+            <option value="other_services">Other Services</option>
+        </select>
+    </section>
+
+    <section id="calendar">
+        <h2>Select Date and Time</h2>
+        <div id="calendar"></div>
+    </section>
+
+    <section id="booking-details">
+        <button onclick="submitBooking()">Submit Booking</button>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
